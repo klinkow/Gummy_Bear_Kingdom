@@ -1,7 +1,28 @@
 <h1>Here are the gummy products:</h1>
 
-<ul>
-  <% @products.each do |product| %>
-  <li> <%= link_to product.name, product_path(product) %> </li>
-  <% end %>
-</ul>
+
+<div class="row">
+
+    <% @products.each do |product| %>
+  <div class="col s12 m7">
+    <div class="card">
+      <div class="card-image center-align">
+        <img src="http://i3.cpcache.com/product/1563884123/flip_flops.jpg?width=750&height=750&Filters=%5B%7B%22name%22%3A%22background%22%2C%22value%22%3A%22F2F2F2%22%2C%22sequence%22%3A2%7D%5D">
+        <span class="card-title center-align"><%= link_to product.name, product_path(product) %></span>
+      </div>
+      <div class="card-content">
+        <p>$<%= product.cost.round(2) %></p>
+        <p>Made in <%= product.coo %></p>
+      </div>
+    </div>
+  </div>
+
+    <% end %>
+</div>
+
+
+
+<!-- http://i3.cpcache.com/product/1563884123/flip_flops.jpg?width=750&height=750&Filters=%5B%7B%22name%22%3A%22background%22%2C%22value%22%3A%22F2F2F2%22%2C%22sequence%22%3A2%7D%5D -->
+
+
+<%= link_to "Add another product", new_product_path %>
