@@ -1,24 +1,41 @@
-# README
+# _Gummy Bear Kingdom_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### This application displays gummy bear products.
 
-Things you may want to cover:
+## Technologies Used
 
-* Ruby version
+Application: Ruby, Rails, Active Record<br>
+Testing: Rspec, Capybara<br>
+Database: Postgres
 
-* System dependencies
+Installation
+------------
 
-* Configuration
+```
+$ git clone https://github.com/klinkow/shoe_distribution
+```
 
-* Database creation
+Install required gems:
+```
+$ bundle install
+```
 
-* Database initialization
+Create databases:
+```
+rake db:create
+rake db:migrate
+rake db:test:prepare
+```
 
-* How to run the test suite
+Start the webserver:
+```
+$ rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Navigate to `localhost:3000` in browser.
 
-* Deployment instructions
 
-* ...
+License
+-------
+
+(C) 2016 **Bill Klinkow**
