@@ -1,5 +1,5 @@
 class AddImageToProducts < ActiveRecord::Migration[5.0]
   def change
-    add_column :image, :string
+    add_column :products, :image, :string
   end
 end
