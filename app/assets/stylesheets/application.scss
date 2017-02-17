@@ -12,8 +12,28 @@ $secondary-color: color("orange", "base") !default;
 
 .card {
   width: 30%;
+  height: auto;
+  position: relative;
+}
+
+.card-title {
+  position: aboslute;
+  top: -1px;
+    a {
+      color: orange;
+    }
 }
 
 .show-card {
   width: 100%
+}
+
+.flash {
+  text-align: center;
+  border-radius: 15px;
+  background-color: lightgreen;
+  border: 1px solid green;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
 }
